@@ -91,11 +91,5 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    #spacy {
-        width: 95vw;
-        height: 80vh; 
-        padding: 15px; 
-    }
-}
+
 
