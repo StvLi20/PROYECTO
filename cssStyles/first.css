@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -15,7 +15,6 @@ header h1 {
     margin: 0;
 }
 
-/* Navigation Bar */
 .nav-bar {
     list-style: none;
     margin: 0;
@@ -52,13 +51,11 @@ header h1 {
     display: inline-block;
 }
 
-/* Main Content */
 main {
     padding: 20px;
     text-align: center;
 }
 
-/* Footer */
 footer {
     background-color: #004A8F;
     color: white;
@@ -67,7 +64,6 @@ footer {
     font-size: 14px;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
     .nav-bar a {
         padding: 8px 15px;
@@ -87,3 +83,12 @@ footer {
         text-align: center;
     }
 }
+
+.nav-bar img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
