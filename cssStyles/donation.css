@@ -6,13 +6,6 @@ body {
     background-color: #f9f9f9;
 }
 
-header, footer {
-    background-color: #004A8F;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
 main {
     display: flex;
     justify-content: center;
@@ -75,8 +68,55 @@ section ul li {
     background-color: #005999;
 }
 
+
 @media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .donation-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        width: 100%;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    section p,
+    section ul li {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
     .donation-container {
         grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    section p,
+    section ul li {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 6px 10px;
+        font-size: 14px;
     }
 }
