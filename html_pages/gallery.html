@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honduras STEM Foundation</title>
+    <title>Galería de Fotos - Honduras STEM Foundation</title>
     <link rel="stylesheet" href="../cssStyles/first.css">
+    <link rel="stylesheet" href="../cssStyles/gallery.css">
 </head>
 <body>
-
     <header>
         <h1>Honduras STEM Foundation</h1>
         <nav>
@@ -26,9 +26,28 @@
         </nav>
     </header>
 
-
     <main>
-        <div id="spacy" style="height: 95vh;width: 90vw;border: solid;border-width: 1px;">
+        <section class="gallery">
+            <h2>Galería de Fotos</h2>
+            <div class="gallery-grid">
+                <img src="../images/gallery/1.jpg" alt="WRO 2019" class="gallery-item">
+                <img src="../images/gallery/2.jpg" alt="WRO 2019" class="gallery-item">
+                <img src="../images/gallery/3.jpg" alt="WRO 2019" class="gallery-item">
+                <img src="../images/gallery/4.jpg" alt="WRO 2019" class="gallery-item">
+                <img src="../images/gallery/5.jpg" alt="WRO 2019" class="gallery-item">
+                <img src="../images/gallery/6.jpg" alt="Fll 2019" class="gallery-item">
+                <img src="../images/gallery/7.jpg" alt="Fll 2019" class="gallery-item">
+                <img src="../images/gallery/8.jpg" alt="Fll 2019" class="gallery-item">
+                <img src="../images/gallery/9.jpg" alt="Fll 2019" class="gallery-item">
+                <img src="../images/gallery/10.jpg" alt="Fll 2019" class="gallery-item">
+            </div>
+        </section>
+
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image" alt="Expanded View">
+            <div id="caption"></div>
+        </div>
     </main>
 
     <footer>
@@ -36,6 +55,7 @@
         <p>Tegucigalpa, Honduras</p>
         <p>PBX: +504 2240-3500</p>
     </footer>
+
+    <script src="../thingsJS/gallery.js"></script>
 </body>
-<script src="../thingsJS/asincrono.js"></script>
 </html>
