@@ -4,43 +4,43 @@ document.addEventListener('DOMContentLoaded', function() {
     donationForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        // Get form values
+        
         const donorName = document.getElementById('donorName').value.trim();
         const donorEmail = document.getElementById('donorEmail').value.trim();
         const donationAmount = document.getElementById('donationAmount').value.trim();
         const message = document.getElementById('message').value.trim();
 
-        // Validation
+       
         let isValid = true;
         let errorMessage = '';
 
-        // Name validation
+        
         if (donorName === '') {
             isValid = false;
             errorMessage += 'Por favor, ingrese su nombre.\n';
         }
 
-        // Email validation
+        
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (donorEmail === '' || !emailRegex.test(donorEmail)) {
             isValid = false;
             errorMessage += 'Por favor, ingrese un correo electrónico válido.\n';
         }
 
-        // Donation amount validation
+        
         const amountRegex = /^[\d.,]+$/;
         if (donationAmount === '' || !amountRegex.test(donationAmount)) {
             isValid = false;
             errorMessage += 'Por favor, ingrese un monto de donación válido.\n';
         }
 
-        // Display errors or submit form
+        
         if (!isValid) {
             alert(errorMessage);
             return;
         }
 
-        // Simulated form submission (replace with actual backend submission)
+        
         simulateFormSubmission({
             name: donorName,
             email: donorEmail,
@@ -50,14 +50,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function simulateFormSubmission(donationData) {
-        // In a real-world scenario, this would send data to a backend server
+        
         console.log('Donación recibida:', donationData);
         
-        // Show success message
+       
         const successModal = createSuccessModal(donationData);
         document.body.appendChild(successModal);
 
-        // Reset form
+       
         donationForm.reset();
     }
 
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         modal.appendChild(modalContent);
 
-        // Close modal when clicking the button
+        
         const closeModalBtn = modalContent.querySelector('#closeModalBtn');
         closeModalBtn.addEventListener('click', () => {
             document.body.removeChild(modal);

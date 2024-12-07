@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return false;
             }
         } else if (field === 'phone') {
-            value = value.replace('+504', ''); // Eliminar el prefijo de país si está presente
+            value = value.replace('+504', ''); 
             if (!validaciones.phone.test(value)) {
                 input.classList.add('invalid');
                 errorSpan.textContent = errorMessages.phone;
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             alert('Formulario enviado correctamente!');
-            form.reset(); // Limpiar el formulario después de enviar
+            form.reset(); 
         }
     });
 });

@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header Styles */
+
 header {
     background-color: #2c3e50;
     color: white;
@@ -25,7 +25,7 @@ header h1 {
     font-size: 2rem;
 }
 
-/* Navigation Styles */
+
 .nav-bar {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@ header h1 {
     margin-right: 0.5rem;
 }
 
-/* Donation Section Styles */
+
 .donation {
     text-align: center;
     padding: 2rem 1rem;
@@ -78,7 +78,7 @@ header h1 {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Main Content Styles */
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +110,7 @@ main {
     margin-top: 1rem;
 }
 
-/* Form Styles */
+
 .donation-form form {
     display: flex;
     flex-direction: column;
@@ -144,7 +144,7 @@ main {
     background-color: #2980b9;
 }
 
-/* Footer Styles */
+
 footer {
     background-color: #2c3e50;
     color: white;
@@ -152,7 +152,7 @@ footer {
     padding: 1rem;
 }
 
-/* Responsive Design */
+
 @media screen and (min-width: 768px) {
     .nav-bar {
         justify-content: center;

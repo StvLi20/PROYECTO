@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for navigation links
+    
     const navLinks = document.querySelectorAll('nav ul li a');
     
     navLinks.forEach(link => {
@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
-
-    // Simple event hover effect for event cards
     const eventCards = document.querySelectorAll('.event-card');
     
     eventCards.forEach(card => {
@@ -28,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Add current year to footer dynamically
+   
     const footerYear = document.querySelector('footer p');
     const currentYear = new Date().getFullYear();
     footerYear.textContent = `© ${currentYear} Fundación STEM Honduras. Todos los derechos reservados.`;

@@ -1,7 +1,7 @@
-// JavaScript para manejar la interacción de la página de eventos
+
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Función para mostrar detalles al hacer clic en una tarjeta de evento
+   
     const eventCards = document.querySelectorAll(".event-card");
 
     eventCards.forEach(card => {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Función para filtrar eventos
+    
     const filterInput = document.createElement("input");
     filterInput.type = "text";
     filterInput.placeholder = "Buscar eventos...";
